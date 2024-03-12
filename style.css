@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Muli&display=swap");
+
+* {
+    box-sizing: border-box;
+    --white-color: rgb(237, 237, 237);
+  }
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: auto;
+    overflow: hidden;
+    margin: 0;
+    font-family: "Muli", sans-serif;
+    background-color: #dadada;
+}
+
+.container{
+    height: 540px;
+    width: 340px;
+    padding: 20px;
+    background-color: rgb(101, 153, 230);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.216), 0 6px 6px rgba(0, 0, 0, 0.216);
+    border-radius: 16px;
+    border: #000 solid 2px;
+}
+
+.screen{
+    background-color: var(--white-color);
+    border-radius: 16px;
+    border: #000 solid 2px;
+    padding: 20px;
+    font-size: 35px;
+    overflow: auto;
+}
+
+.calc-row{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.btn{
+    background-color: var(--white-color);
+    font-size: 25px;
+    margin: 5% 0;
+    padding: 10px 15px;
+    border-radius: 16px;
+    border: #000 solid 2px;
+    cursor: pointer;
+    flex-basis: 20%;
+    background-color: #e3d367;
+}
+
+.btn:hover{
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1), 0 6px 6px rgba(0, 0, 0, 0.1);
+}
+
+.btn:active{
+    transform: scale(0.98);
+}
+
+.btn:last-child{
+    background-color: #dd5858;
+}
+
+.double{
+    flex-basis: 47%;
+}
+
+.triple{
+    flex-basis: 73%;
+}
